@@ -1,0 +1,57 @@
+{
+  "name": "spred-react",
+  "description": "Preact integration for Spred",
+  "homepage": "https://github.com/art-bazhin/spred-preact",
+  "repository": "git@github.com/art-bazhin/spred-preact.git",
+  "bugs": "https://github.com/art-bazhin/spred-preact/issues",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@size-limit/preset-small-lib": "^7.0.3",
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "babel-jest": "^27.4.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "jest": "^27.4.3",
+    "prettier": "^2.5.0",
+    "rollup": "^2.60.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-ts": "^2.0.4",
+    "size-limit": "^7.0.3",
+    "standard-version": "^9.3.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "preact": ">=10",
+    "spred": ">=0.3.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:dev": "jest --watchAll",
+    "commit": "git-cz",
+    "size": "size-limit",
+    "release": "standard-version",
+    "bench": "npx http-server"
+  },
+  "files": [
+    "dist"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/index.js"
+    }
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
