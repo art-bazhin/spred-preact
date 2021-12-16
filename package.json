@@ -1,5 +1,5 @@
 {
-  "name": "spred-react",
+  "name": "spred-preact",
   "description": "Preact integration for Spred",
   "homepage": "https://github.com/art-bazhin/spred-preact",
   "repository": "git@github.com/art-bazhin/spred-preact.git",
